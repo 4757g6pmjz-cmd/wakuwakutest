@@ -1,4 +1,3 @@
-<!--
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -6,16 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pyxel Web App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/gh/kitao/pyxel/wasm/pyxel.js"></script>
 </head>
+<body>
+    <main class="container">
+        <header>
+            <h1>My Pyxel Project</h1>
+            <p>ウィンドウをクリックしてゲームを開始</p>
+        </header>
 
-<pyxel-run name="main.py" gamepad="enabled"></pyxel-run>
--->
+        <div id="game-wrapper" class="is-small">
+            <iframe 
+                src="https://kitao.github.io/pyxel/wasm/launcher/?run=4757g6pmjz-cmd.wakuwakutest.new-test1.main&gamepad=enabled" 
+                width="100%" 
+                height="100%" 
+                style="border:none;"
+                allow="autoplay">
+            </iframe>
 
-<iframe 
-    src="https://kitao.github.io/pyxel/wasm/launcher/?run=4757g6pmjz-cmd.wakuwakutest.new-test1.main&gamepad=enabled" 
-    width="400" 
-    height="400" 
-    style="border:none;"
-    allow="autoplay">
-</iframe>
+        </div>
+
+        <footer>
+            <p>Created with Pyxel & TypeScript</p>
+        </footer>
+    </main>
+    <script src="main.js"></script></body>

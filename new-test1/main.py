@@ -7,22 +7,22 @@ class App:
         pyxel.run(self.update, self.draw)    
     def update(self):
         #十字キー
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_UP):
+        if pyxel.btnp(pyxel.KEY_DOWN):
             self.y -= 2
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_DOWN):
+        if pyxel.btnp(pyxel.KEY_UP):
             self.y += 2
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_LEFT):
+        if pyxel.btnp(pyxel.KEY_LEFT):
             self.x -= 2
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_DPAD_RIGHT):
+        if pyxel.btnp(pyxel.KEY_RIGHT):
             self.x += 2
         #日本でいうところのAとB、XとYがそれぞれ逆なので注意
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_B):
+        if pyxel.btnp(pyxel.KEY_D):
             self.color = pyxel.COLOR_RED
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_A):
+        if pyxel.btnp(pyxel.KEY_C):
             self.color = pyxel.COLOR_GREEN
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_Y):
+        if pyxel.btnp(pyxel.KEY_B):
             self.color = pyxel.COLOR_YELLOW
-        if pyxel.btnp(pyxel.GAMEPAD1_BUTTON_X):
+        if pyxel.btnp(pyxel.KEY_A):
             self.color = pyxel.COLOR_CYAN
         
     def draw(self):
