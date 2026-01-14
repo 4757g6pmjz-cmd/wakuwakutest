@@ -16,7 +16,7 @@ class App:
     def draw(self):
         pyxel.cls(0)
         pyxel.blt(self.x, 60, 0, 0, 0, 8, 8, 2)
-        pyxel.text(48, 53, "Pyxel Code Maker", pyxel.rndi(1, 15))
+        pyxel.text(48, 53, "Lifestyle by Pyxel", pyxel.rndi(1, 15))
 
 
 App()
