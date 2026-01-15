@@ -30,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         //すでに起動している場合
         else { 
-            alert('end?');
+            const willEnd = window.confirm("プレイを止めますか？");
+            if(!willEnd) return
 
             console.log("Pyxel Stopping...");
 
